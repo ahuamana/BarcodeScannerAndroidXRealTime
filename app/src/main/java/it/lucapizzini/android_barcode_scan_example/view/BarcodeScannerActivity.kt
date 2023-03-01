@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.camera.core.CameraSelector
@@ -34,6 +35,7 @@ class BarcodeScannerActivity : AppCompatActivity() {
 
         barcodeBoxView = BarcodeBoxView(this)
         addContentView(barcodeBoxView, ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
+
 
         checkCameraPermission()
     }
